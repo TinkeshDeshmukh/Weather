@@ -8,6 +8,7 @@ const wind=document.getElementById("wind")
 const rain =document.getElementById("rain")
 const wrappercontainer=document.getElementById("wrappercontainer")
 const Section2Container=document.getElementById("section2Container")
+const weatherImage = document.getElementById("weathericon")
 btn.addEventListener("click",()=>{
 	const val=input.value;
 	wrappercontainer.style.animation="increaser 1s ease-in-out"
@@ -33,6 +34,8 @@ async function getweather(val){
 	wind.textContent=`WindSpeed:${data.wind.speed}km/h `;
 	rain.textContent=data.weather[0].description
 	console.log(data.weather[0].description);
+	weatherImage.src=`http://openweathermap.org/img/wn/${data.weather[0].icon }.png`
+
 
 	
 } 
