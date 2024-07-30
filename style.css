@@ -109,9 +109,6 @@ body{
    }
 }
 #weathericon{
-    position: absolute;
-    left: 35%;
-    bottom: 0%;
     border: none;
     outline: none;
     filter: drop-shadow(2px 2px 10px rgb(255, 137, 3));
